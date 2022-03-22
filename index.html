@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Snake</title>
+  </head>
+  <body style="background-color: #b3daff">
+    <div id="high-score" name="high-score">
+      High Score:<span id="my-high-score">0</span>
+    </div>
+    <div id="score">Score:<span id="my-score">0</span></div>
+    <button
+      class="btn btn--new"
+      style="
+        padding: 0.7rem 2.5rem;
+        border-radius: 50rem;
+        box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+        height: 8%;
+        font-size: 1.8rem;
+      "
+    >
+      🔄 New game
+    </button>
+    <audio src="dead.wav" id="gameover"></audio>
+    <audio src="up.mp3" id="up"></audio>
+    <audio src="down.mp3" id="down"></audio>
+    <audio src="left.mp3" id="left"></audio>
+    <audio src="right.mp3" id="right"></audio>
+    <audio src="gallop.wav" id="gallop"></audio>
+
+    <!-- <form>
+<input  style="position:relative;" name="new_high_score" id="myText">
+    </form>-->
+    <div id="rect"></div>
+    <canvas
+      id="my-canvas"
+      width="1189px"
+      height="514px"
+      border="groove 7px coral"
+    >
+    </canvas>
+
+    <script type="text/javascript" src="script.js">
+      // document.querySelector("#myhighscore5").innerHTML=-90;
+    </script>
+  </body>
+</html>
